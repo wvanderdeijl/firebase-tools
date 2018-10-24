@@ -68,7 +68,7 @@ module.exports = new Command("database:push <path> [infile]")
             utils.logSuccess("Data pushed successfully");
             logger.info();
             logger.info(clc.bold("View data at:"), consoleUrl);
-            return resolve(new Firebase(refurl));
+            return resolve();
           })
         );
       });
